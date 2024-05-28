@@ -1,0 +1,434 @@
+\input{./latex_files/preamble.tex}
+\begin{document}
+\let\WriteBookmarks\relax
+\def\floatpagepagefraction{1}
+\def\textpagefraction{.001}
+
+% Short title
+\shorttitle{\textbf{A separate way to measure rate of return}}
+
+% Short author
+\shortauthors{Gordon Getty}
+
+% Main title of the paper
+\title [mode = title]{\textbf{A separate way to measure rate of return}}                      
+% Title footnote mark
+% eg: \tnotemark[1]
+% \tnotemark[1,2]
+
+% Title footnote 1.
+% eg: \tnotetext[1]{Title footnote text}
+% \tnotetext[<tnote number>]{<tnote text>} 
+% \tnotetext[1]{This document is the results of the research
+%   project funded by the National Science Foundation.}
+
+% \tnotetext[2]{The second title footnote which is a longer text matter
+%   to fill through the whole text width and overflow into
+%   another line in the footnotes area of the first page.}
+
+
+% First author
+%
+% Options: Use if required
+% eg: \author[1,3]{Author Name}[type=editor,
+%       style=chinese,
+%       auid=000,
+%       bioid=1,
+%       prefix=Sir,
+%       orcid=0000-0000-0000-0000,
+%       facebook=<facebook id>,
+%       twitter=<twitter id>,
+%       linkedin=<linkedin id>,
+%       gplus=<gplus id>]
+\author[1]{Gordon Getty}[
+                        type=editor,
+                       % auid=000,bioid=1,
+                       % prefix=Sir,
+                        role=Researcher,
+                        orcid=0000-0002-0939-6932
+                        ]
+
+% corresponding author indication
+\cormark[1]
+\ead{ggetty@LeakeyFoundation.org}
+
+\author[2]{Nikita Tkachenko}[
+                    type=editor,
+                    % auid=000,bioid=1,
+                    % prefix=Sir,
+                    role=Assistant,
+                    orcid=0009-0003-8681-3335
+]
+
+\ead{natkachenko@usfca.edu}
+
+
+
+
+%\author[2]{Robert Trivers}[
+                       % type=editor,
+                       % auid=000,bioid=1,
+                       % prefix=Sir,
+                       % role=Researcher,
+                       % orcid=0009-0003-8681-3335
+%                        ]
+
+% Corresponding author indication
+
+%\ead{natkachenko@usfca.edu}
+% Footnote of the first author
+% \fnmark[1]
+
+% Email id of the first author
+
+% URL of the first author
+% \ead[url]{www.cvr.cc, cvr@sayahna.org}
+
+%  Credit authorship
+% \credit{Conceptualization of this study, Methodology, Software}
+
+% Address/affiliation
+\affiliation[1]{%
+            organization={Leakey Foundation},
+            addressline={1003B O’Reilly Avenue}, 
+            city={San Francisco},
+            postcode={94129}, 
+            state={California},
+            country={United States}}
+
+\affiliation[2]{organization={Graduate Student, University of San Francisco},
+            addressline={2130 Fulton St}, 
+            city={San Francisco},
+            postcode={94117}, 
+            state={California},
+            country={United States}}
+            
+% \affiliation[2]{organization={Professor of Anthropology and Biological Sciences, Rutgers University (retired)},
+           % addressline={2130 Fulton St}, 
+           % city={San Francisco},
+           % postcode={94117}, 
+           % state={California},
+           % country={United States}
+%           }
+
+% Second author
+% \author[2,4]{Han Theh Thanh}[style=chinese]
+
+% Third author
+%\author[2,3]{CV Rajagopal}[%
+%   role=Co-ordinator,
+%   suffix=Jr,
+%   ]
+%\fnmark[2]
+%\ead{cvr3@sayahna.org}
+%\ead[URL]{www.sayahna.org}
+
+%\credit{Data curation, Writing - Original draft preparation}
+
+% Address/affiliation
+% \affiliation[2]{organization={Sayahna Foundation},
+%    % addressline={}, 
+%    city={Jagathy},
+%    % citysep={}, % Uncomment if no comma needed between city and postcode
+%    postcode={695014}, 
+%    state={Trivandrum},
+%    country={India}}
+
+% Corresponding author text
+\cortext[cor1]{Corresponding author}
+% \cortext[cor2]{Principal corresponding author}
+
+% Footnote text
+%\fntext[fn1]{This is the first author footnote. but is common to third
+%  author as well.}
+%\fntext[fn2]{Another author footnote, this is a very long footnote and
+%  it should be a really long footnote. But this footnote is not yet
+%  sufficiently long enough to make two lines of footnote text.}
+
+% For a title note without a number/mark
+%\nonumnote{This note has no numbers. In this work we demonstrate $a_b$
+%  the formation Y\_1 of a new type of polariton on the interface
+%  between a cuprous oxide slab and a polystyrene micro-sphere placed
+%  on the slab.
+%  }
+
+% Here goes the abstract
+\begin{abstract}
+Net profit is sometimes found from data for net operating surplus.  We propose a way to find it from data for consumption, pay and market-value capital, and concomitantly to reveal the factor shares in consumption.
+\\
+\end{abstract}
+
+% Use if graphical abstract is present
+% \begin{graphicalabstract}
+% \includegraphics{figs/grabs.pdf}
+% \end{graphicalabstract}
+
+% Research highlights
+%\begin{highlights}
+%\item Research highlights item 1
+%\item Research highlights item 2
+%\item Research highlights item 3
+%\end{highlights}
+
+% Keywords
+% Each keyword is seperated by \sep
+\begin{keywords}
+Net profit\sep Market-value capital \sep Consumption \sep Pay
+\end{keywords}
+
+\maketitle
+
+\section{Introduction}
+
+Many economists are interested in net profit as the capital share of income, and in rate of return as its ratio to capital invested. 
+%
+Rate of return to equity and debt investments has been derived from market quotes and dividends, from census methods as to real estate, and from real interest rates\footnote{See e.g. \cite{jorda2019}, and \cite{homer2005history}.}. We suggest that these methods can be supplemented by another which reasons from data for consumption, pay\footnote{Compensation of employees plus a share of mixed income.} and market-value capital as reported in national accounts. We argue, that is,
+%
+that cash flow can be found as consumption less pay, and that this difference can then be added to change in market-value capital to give net profit at market value. Net profit can be divided by market-value capital to give rate of return. The argument will meanwhile help clarify factor shares in consumption.
+
+\section{A separate measure of net profit}
+
+National accounts and most teaching are organized on the principles that net output is realized in the forms of consumption and capital growth\footnote{Usually stated as consumption and net investment, but with the understanding that net investment is realized in capital growth. We measure capital at market value, not at its cost in depreciated investment.}, and that this sum equals the factor shares in it as pay and net profit. Thus net output and the equal claims on it show as
+\begin{equation}
+    C + \Delta K = \Pi + P \quad \text{in national accounts,} \label{eq-1}
+\end{equation}
+where these notations respectively give consumption, capital growth, pay and net profit. Appendix \ref{appendix-a1} will question the teaching that these two sums give net output and claims on net output. Eq. \eqref{eq-1} will be confirmed nonetheless in Section 5 below by another argument, and in Appendix \ref{appendix-a2} by another still.
+
+Meanwhile Eq. \eqref{eq-1} can be arranged as
+\begin{equation}
+    C - \Pi = P - \Delta K \ . \label{eq-2}
+\end{equation}
+
+$P-\Delta K$, or net profit less capital growth, gives cash flow, or the net flow of value passed from assets to their owners for consumption or reinvestment in other assets. We notate cash flow as $F(K)$, and write\footnote{We find no standard notation for cash flow or cash flow rate, as might be expected in that the cash flow concept is little used in economics outside the specialty of finance. Our choice $F(K)$ risks misinterpretation in that the form $F(X)$ tends to mean a unspecified function of $X$. We use $F(K)$, rather than simply $F$, because we believe that the cash flow from human capital can also be usefully defined, and can show as $F(H)$ (see Appendix \ref{appendix-a1}).}
+\begin{equation}
+    P - \Delta K = F(K) \ . \quad \text{By Eq. \eqref{eq-2}, then} \label{eq-3}
+\end{equation}
+\vspace{-5ex}
+\begin{equation}
+    C - \Pi = F(K) \label{eq-4} \ .
+\end{equation}
+%
+By Eqs. \eqref{eq-3} and \eqref{eq-4}, then, it is possible to measure net profit as 
+%
+\begin{equation}
+P = \Delta K + F(K) = \Delta K + C - \Pi\ . \label{eq-5}
+\end{equation}
+We define
+%This may be divided by capital to find
+\begin{equation*}
+r(K) = \frac{P}{K}\ , \quad g(K) = \frac{\Delta K}{K} \quad \text{and} \quad f(K) = \frac{F(K)}{K} = \frac{C - \Pi}{K} \ ,
+\end{equation*}
+where $r(K)$ is rate of return, $g(K)$ is capital growth rate, and $f(K)$ is our notation for cash flow rate\footnote{See footnote 4.}. These definitions allow division of Eq. \eqref{eq-5} by capital to show
+\begin{equation}
+    r(K) = g(K) + f(K) = g(K) + \frac{C-\Pi}{K}\ . \label{eq-6}
+\end{equation}
+Table \ref{tbl-fgr_table} shows \(f(K), g(K)\) and \(r(K)\) as inferred from data for \(C,\Pi\) and \(K\) through Eqs. \eqref{eq-5} and \eqref{eq-6}.
+%
+\FloatBarrier
+\input{./tables/fgr_table.tex}
+\FloatBarrier
+
+
+\section{High values of \(f(K)\) and \(r(K)\) in some countries}
+
+Table \ref{tbl-fgr_table} shows average values of \(f(K)\), calculated as \(\frac{C-\Pi}{K}\), as greater than 10\% in 26 of the 68 countries reported. 
+Evidence from stock markets and business experience suggests that cash flow rates greater than 10\%, with concomitantly high rates of return, are unlikely at a national scale. Rather, we suspect that there are conditions under which national accounts tend to overstate consumption, or understate pay and market value of capital, or all at once. Our displays list countries in descending order of net income per capita due to a first impression, which may be wrong, that conditions for misgauging \(C, \Pi\) and \(K\) may have something to do with technological advancement\footnote{Only 5 of those 26 countries appear in the top half of all 68 countries ranked by net income per capita.}. Results for those 26 countries remind us that measurements in accounts, including national accounts, are generally imperfect, and that our derivation of \(f(K), g(K)\) and \(r(K)\) from measurements of \(C, \Pi\) and \(K\) cannot give exact results in any country at any time.
+
+
+
+
+\section{The possibility of negative values of $\Delta K$ and $P$}
+
+It is expected that \(\Delta K\), even at national or global scales, will occasionally be negative in times of recession, depression or external shocks. When \(- \Delta K\) exceeds \(F(K)\) absolutely, then net profit $P$ will also be negative. Table~\ref{tbl-fgr_table} and line charts in Section 1 of the \href{https://web-appendix.quarto.pub/separate-way-to-measure-rate-of-return/}{web appendix}\footnote{Web Appendix: https://web-appendix.quarto.pub/separate-way-to-measure-rate-of-return/} show these recurring realities of the investment world.
+
+
+\section{Cash flow, consumption and pay}
+
+Net profit might be spent either on investment or consumption. Cash flow, however, is defined as net of any concurrent investment, whether the source of that investment is from pay, or from transfer payments received, or reinvestment of cash flow received. Thus the only possible dispositions of cash flow at the household scale, where that set includes all existing or currently acquired assets of the household, are in consumption or in transfer payments to other households. If net transfer $\Gamma$ means transfer paid out less transfer received, then, this reasoning gives
+\begin{equation}
+\Pi + F(K) = C + \Gamma \quad \text{at the household scale,} \label{eq-13}
+\end{equation}
+as the source and disposition of payments. At the collective scale, where transfers offset to zero, then, 
+\begin{equation}
+\Pi + F(K) = C \ , \quad \text{from which} \quad C - \Pi = F(K) \ , \quad \text{collectively.} \label{eq-14}
+\end{equation}
+This confirms Eq. \eqref{eq-4}, and also Eqs. \eqref{eq-1} and \eqref{eq-2} by the reasoning shown in Eq. \eqref{eq-3}.
+
+\section{Where our method fits}
+
+We see our indirect derivation method for finding \(f(K)\) and \(r(K)\) as complementary to methods of finding them by direct research as in \cite{jorda2019}, which we choose as our current reference standard for that method. Table \ref{tbl-jorda_table} compares our findings with theirs. Their research approach gives finer detail, while ours by inference from \(C,\Pi\) and \(K\), subject to mismeasurement problems described in Section 3, gives broader coverage. Ours describes for capital as a whole, including owner-occupied housing and government property and personal effects, even if we are not sure what \(f(K)\) and \(r(K)\) mean for them. Ours also automatically weights all such components in finding \(f(K)\) and \(r(K)\) as a whole. Meanwhile the research approach, which must focus on areas where assets are commonly rented or traded, illuminates those areas in ways which ours cannot, and with an accuracy that we cannot claim. Neither consumption, nor pay, nor market-value capital can be measured as closely as equity prices and dividend rates in finding \(f(K)\), \(g(K)\) and \(r(K)\) for the corporate sector.
+
+\citeauthor{jorda2019} find \(f(K)\) separately for investments in equities, rental housing, and government bills and bonds as dividend income, rental income, and real interest rates respectively. Table \ref{tbl-jorda_table} shows these findings along with our derivations of \(f(K)\), \(g(K)\), and \(r(K)\) for each country for which \citeauthor{jorda2019} report. In those 16 countries, our impression is that a weighted average of the four measures of \(f(K)\) in \citeauthor{jorda2019} would come close to our single one derived from consumption, pay, and market-value capital, which in these countries seems to hold to a range of some 3\% to 6\% per year.
+
+
+\input{./tables/jorda_table.tex}
+
+\section{Factor shares in consumption}
+
+At the scale of all assets together, where $F(K)$ can no longer be reinvested in other capital, $F(K)$ simplifies to the cost of consumption afforded from net profit, here notated $C(K)$, as distinct from the part of consumption afforded from pay. Then 
+%
+\begin{equation}
+F(K) = C(K) \quad \text{collectively.} \label{eq-7}
+\end{equation}
+%
+It appears from Eq. \eqref{eq-4}, which can be arranged as $C = \Pi + F(K)$, that pay equals the remaining part of consumption afforded from pay rather than from cash flow $F(K)$. If this part is notated $C(\Pi)$, we have
+\begin{equation}
+\Pi = C(\Pi) \quad \text{and} \quad C = C(\Pi) + C(K) \quad \text{collectively,} \label{eq-8}
+\end{equation}
+to give the factor shares in consumption. Division by \(C\) gives
+\begin{equation}
+\frac{C(\Pi)}{C} + \frac{C(K)}{C} = \frac{\Pi}{C} + \frac{F(K)}{C} = 1 \, \quad \text{collectively,} \label{eq-9}
+\end{equation}
+to give those factor shares as percents. Results are shown in Table \ref{tbl-shares_table} below.
+
+\FloatBarrier
+\input{./tables/shares_table.tex}
+\FloatBarrier
+
+Section 2 of the \href{https://web-appendix.quarto.pub/separate-way-to-measure-rate-of-return/}{web appendix}\footnote{See footnote 7 for web address.} to this paper shows line charts plotting labor and capital shares in consumption for each country over time. Note that only 10 of the 34 countries ranked in the top half of these 68 countries by net income per capita, but 32 of the 34 ranked in the lower half, show labor shares in consumption less than 80\%. We suspect that relative undermeasurement of pay, as suggested in explaining high findings for \(f(K)\) in less advanced economies in Table 1, may account for at least part of this difference (See Appendix A.4.).
+
+
+\section{Rate of return in the stationary state}
+The ratio \(C(K)/K\) can be shown as \(c(K)\). Then Eq. \eqref{eq-7} can be divided by \(K\) to show
+\begin{equation}
+f(K) = c(K) \quad \text{collectively.}\label{eq-10}
+\end{equation}
+Substitution in Eq. \eqref{eq-6} now gives
+\begin{equation}
+r(K) = g(K) + c(K) \quad \text{collectively.}\label{eq-11}
+\end{equation}
+The classical concept of the stationary state means a state where \(g(K)\) holds at zero. Eq. \eqref{eq-11} shows that collective return in the stationary state holds at \(c(K)\), the ratio of consumption drawn from capital to capital. Thus 
+\begin{equation}
+r(K) = c(K) \quad \text{collectively, in the stationary state.}\label{eq-12}
+\end{equation}
+A qualifier is appropriate here. By rate of return, we and \citeauthor{jorda2019} mean unleveraged return on capital owned free and clear of all debt. Some economists have meant return in an opposite sense as return to an imaginary entrepreneur who has invested no equity, but rather has borrowed the whole cost of capital employed. Rate of return to such an entrepreneur would tend to equal zero in the stationary state. Eq. \eqref{eq-12} applies only in the deleveraged sense used by us, by \citeauthor{jorda2019}, and by most investors.
+
+\section{Data Sources}
+
+The data for this study other than those reporting market research are sourced from the World Inequality Database (WID), accessible online at \href{https://wid.world}{WID.world}. This comprehensive database integrates data from national accounts and taxation records across 105 countries, standardizing these to align with the United Nations System of National Accounts (SNA) guidelines. For our analysis, we specifically utilize data from the subset of countries that provide comprehensive reports on net income, labor income share, consumption and market-value capital.
+
+The primary variables utilized from WID include net national income (\texttt{mnninc}), the share of labor income (\texttt{wlabsh}), which is represented by us as \(\Pi\), and purchasing power parity conversions of local currencies to USD (\texttt{xlcusp}). WID estimates labor share as compensation of employees plus 70\% of mixed income. Additionally, we use average national income per capita (\texttt{anninc}) for arranging countries in our tables and graphs, and market-value national wealth (\texttt{mnweal}) as a representation of wealth $K$. Consumption $C$, as referenced in our analyses, aggregates Government Final Consumption Expenditure (\texttt{mcongo}) and Private Expenditures of Households and NPISH (\texttt{mconhn}), encapsulating both government expenditure (GCE) and personal consumption expenditure (PCE).
+
+Data reporting market research are directly sourced from the tables presented in \cite{jorda2019}.
+
+
+\section{Discussion and conclusions}
+
+Our method of deriving cash flow rate, capital growth rate, and rate of return from data in national accounts serves as a complement to the traditional method relying on direct research, as in the work of \cite{jorda2019}. Our results tallied broadly with theirs in the 16 countries for which they report.
+
+The labor and capital shares shown in Table \ref{tbl-jorda_table} are broadly consistent with expectations. The labor share of net product is usually estimated at 70\% or so. As consumption is smaller than net product whenever capital growth is positive, the labor share of consumption applies the same numerator (pay) to a smaller denominator (consumption versus net product). Also see Appendix A.4..
+
+\customlabel{appendix-a}{A}{%
+\section*{Appendix A. \hspace{0.5em} Output in terms of human capital}}
+
+
+\renewcommand{\theequation}{A.\arabic{equation}}
+\setcounter{equation}{0}
+
+\customlabel{appendix-a1}{A.1}{%
+\subsection*{Appendix A.1. \hspace{0.5em} Necessary adjustments to the doctrine \(Y=\Delta K + C\)}}
+%
+We take value $V$ to mean the sum of human capital $H$ and physical capital $K$. Then
+\begin{equation}
+V = H + K\ . \label{eq-a1}
+\end{equation}
+%
+Value growth $\Delta V$ equals value creation $Y$, also called net output or value added, plus investment from outside, less value yielded out. Value yielded out less value invested in from outside is cash flow $F(V)$, which may include cash flow from human capital (see Eq. \ref{eq-a3} below). Then
+\begin{equation}
+\Delta V = Y - F(V) \ , \quad \text{from which} \quad Y = \Delta V + F(V) \ . \label{eq-a2}
+\end{equation}
+
+The sum $\Delta V + F(V)$, or value growth plus cash flow, is called total return. Thus Eq. \eqref{eq-a2} shows the equivalence of value added and total return.
+Although human capital is usually measured at cumulative cost, we follow \cite{petty1664verbum}, Fisher (\citeyear{fisher1907}, \citeyear{fisher1930}), \cite{mincer1958} and others in measuring it at present value, or expected lifetime cash flow discounted at the time preference rate. The flow discounted is pay, including imputed pay, as the flow yielded out by human capital to its human owner, less invested consumption\footnote{The concepts of invested consumption, pure consumption, self-invested work and human depreciation were introduced in \cite{schultz1961}.} as the flow invested in human capital from outside itself. If invested consumption shows as $C_s$, then, we find
+\begin{equation}
+F(H) = \Pi - C_s \ , \label{eq-a3}
+\end{equation}
+where $F(H)$ is cash flow of human capital. We also follow \cite{ben-porath1967} in describing the growth of human capital as the sum of invested consumption plus self-invested work less human depreciation. If the last two flows show as $W_s$ and $D(H)$, we have\footnote{Our terms and notations need not follow those of our sources. We are not aware, for example, that others have used the term “human cash flow”.}
+\begin{equation}
+\Delta H = C_s + W_s - D(H) \ . \label{eq-a4}
+\end{equation}
+Eq. \eqref{eq-a2} can be applied to human capital separately to find work $W$, the net output produced by human capital, as 
+\begin{align}
+W = \Delta H + F(H) = C_s + W_s - D(H) + \Pi - C_s = \Pi + W_s - D(H) \ , \label{eq-a5}
+\end{align}
+showing that work exceeds pay by the amount $W_s - D(H)$.
+
+Cash flow from assets generally can be spent on investment in other assets or on consumption. Cash flow from all physical capital of all households together is net of all investment in physical capital, and is spent wholly on consumption (Eq. \eqref{eq-7}). Cash flow from physical and human capital together is net of all investment in human capital through invested consumption, and so is spent on pure consumption alone\footnote{The flow which maintains rather than creates human capital, and so is exhausted from the economy in satisfying tastes for vitality and survival.}. If this is notated $C_p$, then preceding equations allow
+\begin{equation}
+\begin{aligned}
+Y &= \Delta V + C_p \\
+&= \Delta H + \Delta K + C_p \\
+&= C_s + W_s - D(H) + \Delta K + C_p \quad \text{collectively.} \label{eq-a6}
+\end{aligned}
+\end{equation}
+As consumption $C$ is either invested in human capital or yielded from the economy in satisfying tastes, we may write
+\begin{equation}
+C_s + C_p = C \ . \quad \text{From Eq. \eqref{eq-a6}, then} \label{eq-a7}
+\end{equation}
+\vspace{-5ex}
+\begin{equation}
+Y = C + W_s - D(H) + \Delta K \ , \quad \text{collectively,} \label{eq-a8}
+\end{equation}
+showing that $Y$ exceeds the sum $C + \Delta K$ by the amount $W_s - D(H)$ at the collective scale.
+
+\customlabel{appendix-a2}{A.2}{%
+\subsection*{Appendix A.2. \hspace{0.5em} Confirmation of Eq. (\ref{eq-1})}}
+
+Net output can also be found at the sum of net outputs of the factors. That is,
+\begin{equation}
+Y = W + P \ . \quad \text{Substitution of Eq. \eqref{eq-a5} in this gives} \label{eq-a9}
+\end{equation}
+\vspace{-5ex}
+\begin{equation}
+Y = \Pi + W_s - D(H) + P \ . \quad \text{This and Eq. \eqref{eq-a8}, with rearrangement, allow} \label{eq-a10}
+\end{equation}
+\vspace{-5ex}
+\begin{equation}
+Y = C + \Delta K + W_s - D(H) = \Pi + P + W_s - D(H) \ , \quad \text{collectively,} \label{eq-a11}
+\end{equation}
+from which
+\begin{equation}
+C + \Delta K = \Pi + P \ , \quad \text{collectively,} 
+\end{equation}
+confirming Eq. \eqref{eq-1} at the collective scale.
+
+
+
+\customlabel{appendix-a3}{A.3}{%
+\subsection*{Appendix A.3. \hspace{0.5em} Factor shares in net income}}
+
+We have treated the larger factor as human capital measured as present value of prospective lifetime pay less invested consumption, rather than as labor measured, say, in headcount or hours or current pay, but we follow custom by terming its share in net income or in consumption as the labor share. Eq. (A.11) shows that net output, and equivalently net income, exceed the sums $C + \Delta K$, or equivalently $\Pi + P$, by the difference $W_s - D(H)$.
+
+The labor share in consumption was reasoned in Eqs. \eqref{eq-8} and \eqref{eq-9} to equal $\Pi$ absolutely, and $\Pi / C$ as a percentage. The capital share in consumption was reasoned to equal $F(K)$ absolutely, and $F(K)/C$ as a percentage, since this is the only remaining possible disposition of $C$. Thus measurement of the factor shares in $C$ would require only measurement of $\Pi$ and $C$, where measurement of $F(K)$ is inferred as their difference rather than measured separately.
+
+Factor shares in net income, however, would be defined as $W$ and $P$ absolutely and as $W/Y$ and $P/Y$ as percentages. Equations above allow
+\begin{equation}
+\frac{W}{Y} = \frac{\Pi + W_s - D(H)}{C + \Delta K + W_s - D(H)} \quad  \text{and} \quad \frac{P}{Y} = \frac{\Delta K + C - \Pi}{C + \Delta K + W_s - D(H)} \ , \label{eq-a13}
+\end{equation}
+showing that measurement of factor shares in net income require measurement of $K,\ W_s$ and $D(H)$ as well as $C$ and $\Pi$. As human capital leaves little market record apart from its rise in pay, and from an important component of invested consumption in the cost of schooling, measurements of $Y$ and $W$ are problematic. We suggest that distribution theory might consider a refocus from shares in net income to shares in consumption on these grounds of measurability and others. It can be argued that individuals vary in appetite for wealth, and in talent for managing wealth, and in willingness to accept the responsibility for that management, but that all agree in need for consumption. Benevolence and wisdom of public  policy, if so, might better be measured by ample sufficiency of consumption than by equality of net income, so that individual tastes and talents can account for the rest of differences in net income.
+
+\customlabel{appendix-a4}{A.4}{%
+\subsection*{Appendix A.4. \hspace{0.5em} Summary and discussion}}
+
+The bad news is that we cannot measure net output in the sense of value added to both factors. The sums we had thought measured it, meaning $C + \Delta K$ or equivalently $\Pi + P$, both overlook $W_s$ and $D(H)$ as positive and negative components in value added to human capital. Neither $W_s$ (self-invested work) nor $D(H)$ (human depreciation) is practical to measure.
+
+The good news is that we can measure net profit at market value, including imputed net profit on the housing and government sectors, subject to measurement problems discussed earlier, from data for consumption, pay and market value capital alone. Meanwhile we can measure the labor and capital shares in consumption as $\Pi / C$ and $( C - \Pi ) / C$, with the same qualifier, without need for other data. This convenience gives some compensation for the difficulty in finding net income, or factor shares in net income as adjusted for $W_s$ and $D(H)$.
+
+As arguments determining \(f(K), g(K), r(K), c(\Pi)\) and \(c(K)\) relied on no simplifying assumptions, we could find those values exactly if we could measure \(C, \Pi\) and \(K\) exactly. We cannot. It may be possible, however, to focus more attention on measuring them, and in seeking consensus as to appropriate imputations where measurement is impractical. It may be the case, for example, that pay tends to be less fully recognized in agrarian economies, where higher percentages of people are self-employed homemakers, farmers and herders. Capital too might tend to be relatively underreported if such people are more likely to make implements for use by themselves and their communities, and to construct their own housing, rather than buy and sell those things in formal markets. If any such differences in completeness of measurement were verified, and quantified in standard imputations, it might be possible to reach more realistic versions of Tables \ref{tbl-fgr_table} and \ref{tbl-jorda_table} for those countries and others.
+
+
+%
+%
+\printcredits
+
+%% Loading bibliography style file
+% \bibliographystyle{model1-num-names}
+\bibliographystyle{cas-model2-names}
+
+% Loading bibliography database
+\bibliography{cas-refs}
+
+
+
+\end{document}
+

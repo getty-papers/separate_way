@@ -1,0 +1,4 @@
+- source: 68_country_plots.qmd
+  quarto-pub:
+    - id: ddcdc8ea-6663-4619-bf67-461ef55c357b
+      url: 'https://web-appendix.quarto.pub/separate-way-to-measure-rate-of-return'
