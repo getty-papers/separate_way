@@ -13,4 +13,8 @@ commit:
 	git commit -m "update"
 	git push origin main
 
+prepare:
+	make render
+	mv tmp/main.bbl .
+	zip -r arxiv.zip latex_files/ tables/ thumbnails/ figures/ main.tex main.bbl
 
